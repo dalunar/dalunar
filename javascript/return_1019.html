@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="css/1019.css">
+    <script src="js/1019.js"></script>
+    <script>
+      var aa = 3;
+      var bb = 5;
+      var cc = aa+bb;
+      document.write(cc);
+
+      function aa1(){ // 함수 - 파라미터가 없는 기본형
+        document.write("지금은 오후");
+      }
+      aa1();
+
+      function aa2(time){ // 함수 - 파라미터가 있는 함수형태
+        console.log(time);
+        document.write("아까는 오전2"+time);
+      }
+      aa2(12);
+      aa2("홍길동");
+
+      function aa3(x,y){
+        console.log(x+y);
+      }
+      aa3(13,20);
+      aa3(100,80);
+
+      function aa4(x,y){
+        console.log(x+"과"+y+"의 합은 "+(x+y)+" 입니다");
+      }
+      aa4(50,100);
+      aa4(80,900);
+      aa4(5,50);
+
+      var aa5 = "오늘";
+      var bb5 = "내일";
+      console.log(aa5+"-"+bb5);
+
+
+      console.log("----------------------------------------------")
+      function cc5(x,y){ // 함수 - return 값을 갖는 함수 형태
+        var aaa = x+"-"+y;
+        console.log(x+"은 19일, "+y+"는 20일");
+        return "순희";
+      }
+      cc5("오늘","내일");
+      console.log("----------------------------------------------")
+
+      var dd5 = cc5("오늘","내일");
+      console.log(dd5);
+
+
+
+      console.log("----------------------------------------------")
+      var aa6 = "홍길동1";
+      function bb6(){
+        return "홍길동5";
+      }
+      bb6();
+      console.log("1. 나의 이름은 홍길동입니다.");
+      console.log("2. 나의 이름은 "+aa6+"입니다");
+      console.log("3. 나의 이름은 "+bb6()+"입니다");
+
+
+
+    </script>
+  </head>
+  <body>
+    <!--<p>오늘은 10월19일</p>-->
+  </body>
+</html>
